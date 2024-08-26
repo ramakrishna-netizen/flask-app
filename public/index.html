@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .main-register{
+
+            margin-top: 10% ;
+        }
+     
+        .main-register form{
+            display: flex;
+            flex-direction: column;
+
+            align-content: center;
+            padding-left: 30%;
+        }
+        input{
+            width: 30vw;
+            font-size: larger;
+            padding:5px 10px;
+            outline: none;
+            margin: 10px 0px;
+        }
+       
+     
+        button{
+            font-size: larger;
+            padding:10px;
+            width: 31.9vw;
+            outline: none;
+        }
+    </style>
+    <title>Register</title>
+
+    <script defer>
+        
+        document.getElementById('rform').addEventListener('submit',(e)=>{
+            e.preventDefault()
+            
+
+        })
+
+        
+    </script>
+</head>
+<body>
+
+    <main>
+
+        <div class="main-register">
+            <form action="/" method="post" id="rform">
+                <span>Enter Your name</span>
+                <input type="text" name="uname" id="uname" >
+                <span>Enter Your Email</span>
+                <input type="email" name="email" id="email" required>
+                <span>Enter a Secure Password</span>
+                <input type="password" name="password" id="password" required minlength="8">
+                
+                
+                <button type="submit">Submit</button>
+
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
